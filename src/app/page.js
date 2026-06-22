@@ -3,6 +3,8 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 
+import ReactMarkdown from 'react-markdown';
+
 export default function Home() {
   const [githubUrl, setGithubUrl] = useState("");
   const [isGrading, setIsGrading] = useState(false);
@@ -99,7 +101,9 @@ export default function Home() {
 
             <div className={styles.feedback}>
               <h3>AI Code Review</h3>
-              <p>{results.feedback}</p>
+              <div className={styles.markdownWrapper}>
+                <ReactMarkdown>{results.feedback}</ReactMarkdown>
+              </div>
             </div>
           </div>
         )}

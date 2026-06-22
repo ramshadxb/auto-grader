@@ -97,11 +97,11 @@ export async function POST(req) {
             const prompt = `
               You are an expert C programming teacher grading a student's assignment.
               Review the following C code and provide nuanced, structured feedback.
-              Please provide:
-              1. **Strengths**: What the student did well.
-              2. **Areas for Improvement**: Logic flaws, inefficiencies, or styling issues.
-              3. **Security/Vulnerabilities**: Any unsafe functions (e.g., gets()) or buffer overflows.
-              Keep the feedback constructive, detailed, and clear.
+              Please provide the feedback EXCLUSIVELY in markdown bullet points:
+              * **Strengths**: What the student did well.
+              * **Areas for Improvement**: Logic flaws, inefficiencies, or styling issues.
+              * **Security/Vulnerabilities**: Any unsafe functions (e.g., gets()) or buffer overflows.
+              Keep the feedback constructive, detailed, and formatted neatly as a list.
               
               Code:
               ${mainC_Content}
