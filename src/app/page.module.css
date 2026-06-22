@@ -13,7 +13,7 @@
 .header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, #58a6ff, #98c379);
+  background: linear-gradient(to right, #2563eb, #059669);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -58,11 +58,12 @@
 }
 
 .scoreBox {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-secondary);
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
   border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
 
 .scoreBox h3 {
@@ -84,7 +85,8 @@
   font-weight: 700;
 }
 
-.checklist h3, .feedback h3 {
+.checklist h3,
+.feedback h3 {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   border-bottom: 1px solid var(--border-color);
@@ -105,7 +107,8 @@
   font-size: 1.05rem;
 }
 
-.checkPass, .checkFail {
+.checkPass,
+.checkFail {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -131,6 +134,7 @@
   .formGroup {
     flex-direction: column;
   }
+
   .scoreHeader {
     grid-template-columns: 1fr;
   }
@@ -141,7 +145,8 @@
   color: var(--text-secondary);
 }
 
-.markdownWrapper ul, .markdownWrapper ol {
+.markdownWrapper ul,
+.markdownWrapper ol {
   margin-left: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
